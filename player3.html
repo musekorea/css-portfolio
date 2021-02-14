@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Player UI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+    <style>
+  body {
+    height:100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: solid 4px black;
+  width: 270px;
+  height: 470px;
+  padding: 30px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 20px;
+}
+.art {
+  display: flex;
+  margin-top: 30px;
+}
+.art img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  border: solid 1px black;
+}
+.art-right {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.art-right h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.art-right h3 {
+  font-weight: 600;
+  color: gray;
+}
+.control3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 21px;
+  align-items: center;
+}
+.control-play {
+  border: 1px solid black;
+  height: 30px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 2px 0px black;
+}
+.control-play i {
+  margin-right: 15px;
+  font-size: 20px;
+}
+.control-play span {
+  font-weight: 600;
+  font-size: 12x;
+}
+.control-right {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  position: relative;
+  left: -20px;
+}
+.control-right i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px black;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  box-shadow: 0 2px 0;
+}
+.list3-container {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.list3-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.list-box-color {
+  border: solid 1px black;
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: tomato;
+}
+.list-list {
+  display: flex;
+  flex-direction: column;
+}
+.list-list h3 {
+  font-weight: 600;
+  font-size: 13px;
+}
+.list-list h4 {
+  margin-top: 3px;
+  font-size: 4px;
+  color: gray;
+}
+.box2 {
+  background-color: hotpink;
+}
+.box3 {
+  background-color: burlywood;
+}
+.box4 {
+  background-color: teal;
+}
+@keyframes heartBeat {
+  0% {
+    
+    transform: none;
+  }
+  50% {
+    
+    transform: scale(1.1);
+  }
+  100% {
+    
+    transform: none;
+  }
+}
+button{
+  animation: heartBeat 1s ease-in-out infinite;
+  position: absolute;
+  top:30px;
+  left:240px;
+
+}
+
+    </style>
+  </head>
+  <body class="p3body">
+    <a href="index.html">
+      <button>Back to Index</button></a>
+    <div class="container">
+      <div class="title">
+        <span>X</span>
+        <h1>Pseudo Palyer</h1>
+        <span></span>
+      </div>
+
+      <div class="art">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Virtualinsanity.jpg">
+        <div class="art-right">
+        <h2>Virtual Insanity</h2>
+        <h3>by Jamiroquai</h3>
+        </div>
+      </div>
+
+      <div class="control3">
+        <div class="control-play">
+          <i class="fas fa-caret-right"></i>
+        <span>Play</span>
+        </div>
+        <div class="control-right">
+        <i class="far fa-heart"></i>
+        <i class="fas fa-plus"></i>
+        </div>
+      </div>
+
+      <div class="list3-container">
+
+        <div class="list3-box">
+          <div class="list-box-color"></div>
+          <div class="list-list">
+          <h3>Drivers License</h3>
+          <h4>Olivia Rodrigo</h4>
+          </div>
+        </div>
+        <div class="list3-box">
+          <div class="list-box-color box2"></div>
+          <div class="list-list">
+          <h3>Blinding Lights</h3>
+          <h4>The Weekend</h4>
+          </div>
+        </div>
+        <div class="list3-box">
+          <div class="list-box-color box3"></div>
+          <div class="list-list">
+          <h3>Positions</h3>
+          <h4>Ariana Grande</h4>
+          </div>
+        </div>
+        <div class="list3-box">
+          <div class="list-box-color box4"></div>
+          <div class="list-list">
+          <h3>Therefore I Am</h3>
+          <h4>Billie Eilish</h4>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/8b5a5cb437.js" crossorigin="anonymous"></script>
+  </body>
+</html>

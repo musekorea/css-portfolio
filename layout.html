@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Layout</title>
+    <style>
+      .layoutbody {
+  background-color: rgba(191, 191, 202, 0.301);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.layouth1 {
+  position: relative;
+  top: 20px;
+  margin-bottom: 50px;
+}
+.outer {
+  border: solid 5px white;
+  height: 210px;
+  width: 120px;
+}
+.article-1 {
+  display: flex;
+  margin-bottom: 25px;
+}
+.article-2 {
+  display: flex;
+}
+.box1 {
+  background-color: tomato;
+}
+.box2 {
+  background-color: teal;
+  margin-left: 25px;
+}
+.box3 {
+  background-color: burlywood;
+}
+.box4 {
+  background-color: thistle;
+  margin-left: 25px;
+}
+.inside {
+  background-color: white;
+  height: 90px;
+}
+@keyframes heartBeat {
+  0% {
+    
+    transform: none;
+  }
+  50% {
+    
+    transform: scale(1.1);
+  }
+  100% {
+    
+    transform: none;
+  }
+}
+button{
+  animation: heartBeat 1s ease-in-out infinite;
+  position: relative;
+  top:40px;
+  background-color: white;
+}
+
+    </style>
+  </head>
+
+  <body class="layoutbody">
+    <a href="index.html">
+      <button>Back to Index</button></a>
+<h1 class="layouth1">The Best Colors</h1>
+
+<article class="article-1">
+  <div class="box1 outer">
+   <div class="inside">
+     <h3>Tomato</h3>
+     <h4>#FF6347</h4>
+   </div>
+  </div>
+  
+  <div class="box2 outer">
+   <div class="inside">
+    <h3>Teal</h3>
+    <h4>#008080</h4>
+   </div>
+  </div>
+</article>
+
+<article class="article-2">
+  <div class="box3 outer">
+   <div class="inside">
+     <h3>Burlywood</h3>
+     <h4>#DEB887</h4>
+   </div>
+  </div>
+  
+  <div class="box4 outer">
+   <div class="inside">
+    <h3>Thistle</h3>
+    <h4>#D7BFD7</h4>
+   </div>
+  </div>
+</article>
+
+
+</body>
+</html>

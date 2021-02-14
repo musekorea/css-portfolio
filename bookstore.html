@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+  <style>
+body {
+  background-color: rgba(255, 0, 0, 0.068);
+  margin: 30px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:90vh;
+}
+.book-main {
+  width: 280px;
+  padding: 10px 10px;
+  background-color: rgba(128, 128, 128, 0.068);
+  border-radius: 10px;
+}
+h2 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.book-header {
+  background-color: #ffce33;
+  border-radius: 2px;
+}
+.header-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px;
+}
+.header-left {
+  margin-right: auto;
+}
+.header-right {
+  margin-left: auto;
+}
+.header-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  margin: 0 10px;
+  padding: 5px 15px;
+  background-color: white;
+  position: relative;
+  top: 14px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 10px rgba(128, 128, 128, 0.192);
+}
+.bookinput {
+  border: none;
+  opacity: 0.5;
+}
+.bookinput::placeholder {
+  font-size: 10px;
+}
+.fa-search {
+  opacity: 0.2;
+  font-size: 10px;
+}
+
+/* section*/
+.booksection {
+  display: flex;
+  margin-bottom: 15px;
+}
+.section-left img {
+  width: 70px;
+  height: 110px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.section-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.section-right h3 {
+  font-size: 13px;
+  font-weight: 600;
+}
+.section-right h4 {
+  opacity: 0.4;
+  font-size: 10px;
+}
+.section-right__star {
+  color: #ffce33;
+  font-size: 10px;
+}
+.section-right__box1 {
+  display: flex;
+  font-size: 10px;
+}
+.section-right__box1 :first-child {
+  background-color: rgba(128, 128, 128, 0.185);
+  border-radius: 20px;
+  margin-right: 10px;
+  padding: 3px;
+}
+.section-right__box1 :last-child {
+  background-color: rgba(128, 128, 128, 0.185);
+  border-radius: 20px;
+  padding: 3px;
+}
+.section-right__box2 {
+  display: flex;
+}
+.marker {
+  background-color: #ffce33;
+  width: 20px;
+  height: 20px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 11px;
+}
+.marker-right {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.788);
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 70px;
+}
+/* Top Adventures*/
+.booklist {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+.list-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffce33;
+}
+.list-box img {
+  width: 50px;
+  height: 80px;
+  border-radius: 5px;
+}
+.list-star {
+  font-size: 10px;
+  transform: scale(0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+/*popular authors*/
+.content img {
+  width: 70px;
+  height: 110px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.content {
+  display: flex;
+}
+.content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 170px;
+  padding: 5px 7px;
+}
+.content-box span {
+  opacity: 0.4;
+  font-size: 10px;
+}
+.content h3 {
+  font-size: 12px;
+  font-weight: 600;
+}
+@keyframes heartBeat {
+  0% {
+    
+    transform: none;
+  }
+  50% {
+    
+    transform: scale(1.1);
+  }
+  100% {
+    
+    transform: none;
+  }
+}
+button{
+  animation: heartBeat 1s ease-in-out infinite;
+  position: absolute;
+  top:20px;
+  left:220px;
+}
+
+  </style>
+  <title>Page Coding</title>
+</head>
+<body class="bookbody">
+  <a href="index.html">
+    <button>Back to Index</button></a>
+  <main class="book-main">
+<!-- Header-->
+    <header class="book-header">
+      <div class="header-top">
+        <i class="header-left fas fa-bars"></i>
+        <span>library</span>
+        <i class=" header-right fas fa-shopping-bag"></i>
+      </div>
+
+      <div class="header-search">
+        <input class="bookinput" type="search" placeholder="Search Books...">
+        <i class="fas fa-search"></i>
+     </div>
+   </header>
+   
+<!-- Book of the day-->
+      <h2 class="bookh2" >Book of the day</h2>
+    <section class="booksection">
+      <div class="section-left">
+        <img src="https://i.pinimg.com/originals/c0/9f/5b/c09f5befe4b9e3b62274c574bb2b160d.jpg">
+      </div>
+
+    <div class="section-right">
+        <h3>No Fixed Adobe</h3>
+        <h4>Journey Through</h4>
+
+        <div class="section-right__star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star" style="color:rgba(128, 128, 128, 0.199);"></i>
+        </div>
+
+        <div class="section-right__box1">
+        <div>Journey</div>
+        <div>Biography</div>
+      </div>
+
+      <div class="section-right__box2">
+      <div class="marker"><i class="fas fa-bookmark"></i></div>
+      <div class="marker-right">Book Now</div>
+      </div>
+    </div>
+    </section>
+
+<!-- Top Adventures-->
+<h2>Top Adventures</h2>
+    <article class="booklist">
+
+      <div class="list-box">
+        <img src="https://images.penguinrandomhouse.com/cover/9780525556084" alt="hold still">
+        <div class="list-star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star" style="color:rgba(128, 128, 128, 0.199);"></i>
+      </div>
+      </div>
+
+      <div class="list-box">
+        <img src="https://i.pinimg.com/originals/3d/f0/d0/3df0d07e5e381743137d5904a54290df.jpg" alt="jungle book">
+        <div class="list-star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star" style="color:rgba(128, 128, 128, 0.199);"></i>
+        </div>
+      </div>
+
+      <div class="list-box">
+        <img src="https://bizarrevictoria.files.wordpress.com/2017/01/download-1.jpg" alt="the jungle book">
+        <div class="list-star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star" style="color:rgba(128, 128, 128, 0.199);"></i>
+      </div>
+    </div>
+
+      <div class="list-box">
+        <img src="https://wsvincent.com/assets/images/bestjavascriptbooks/js_for_impatient_programmers.jpg" alt="java script">
+        <div class="list-star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star" style="color:rgba(128, 128, 128, 0.199);"></i>
+      </div>
+    </div>
+  </article>
+
+<!-- Popular Authors-->
+<h2>Popular authors</h2>
+    <div class="content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8WGrps09Pg_mp54GLmhfiZRnf3vRbIKcbhQ&usqp=CAU" alt="george martin">
+      <div class="content-box">
+      <h3>George Raymond </h3>
+      <h3>Richard Martin</h3>
+      <div class="content-span">
+      <span>American writer of fantasy, best known for his Song of Ice and Fire series (1996– ), a bloody saga about various factions vying for control of a fictional kingdom.</span>
+      </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <script src="https://kit.fontawesome.com/8b5a5cb437.js" crossorigin="anonymous"></script>
+</body>
+</html>

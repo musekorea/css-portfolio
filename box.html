@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CSS Flex</title>
+    <style>
+      .boxmainbody {
+  background-color: tomato;
+}
+
+.boxbody {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.boxh1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.contaitner {
+  border: solid 3px black;
+  width: 217px;
+  height: 217px;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.smallbox {
+  border: solid 3px white;
+  width: 45px;
+  height: 45px;
+  background-color: teal;
+}
+.widebox {
+  border: dashed 3px white;
+  width: 177px;
+  height: 40px;
+  background-color: teal;
+  margin: 20px 0;
+}
+@keyframes heartBeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.1);
+  }
+  100% {
+    transform: none;
+  }
+}
+button{
+  animation: heartBeat 1s ease-in-out infinite;
+  position: absolute;
+  top:30px;
+  left:250px;
+}
+
+    </style>
+  </head>
+  
+<body class="boxmainbody">
+
+    <h1 class="boxh1">CSS Flex Box</h1>
+    <a href="index.html">
+      <button>Back to Index</button></a>
+    <div class="boxbody">
+       <div class="contaitner">
+          <div class="smallbox"></div>
+           <div class="widebox"></div>
+           <div class="smallbox"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /*header*/
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:100vh;
+      background-color: rgba(0, 255, 106, 0.24);;
+    }
+.player2-body {
+  background-color: rgba(255, 196, 0, 0.308);
+  display: flex;
+}
+.player1 {
+  width: 200px;
+  height: 430px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0985e393;
+  margin: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.art img {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  margin-bottom: 7px;
+}
+.art h3 {
+  font-size: 12px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+.art h4 {
+  margin: 0;
+  opacity: 0.4;
+  font-size: 10px;
+}
+.like {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.like1 {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.753);
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 60px;
+  margin-right: 20px;
+}
+.like2 {
+  background-color: white;
+  color: gray;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 60px;
+}
+.like2 i {
+  color: black;
+  margin-right: 5px;
+  animation: heartBeat 1s infinite;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px;
+}
+.list-li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.list-ul {
+  padding: 0px;
+}
+.list img {
+  width: 35px;
+  height: 35px;
+  border-radius: 7px;
+  margin-right: 10px;
+}
+.list h4 {
+  font-size: 11px;
+  margin: 0 0 3px 0;
+}
+.list h5 {
+  font-size: 10px;
+  margin: 0;
+  opacity: 0.5;
+}
+.list-li-left {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+.fa-ellipsis-v {
+  opacity: 0.3;
+  font-size: 13px;
+}
+.control {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #1b1d1d;
+  border-radius: 30px;
+  padding: 3px;
+}
+.control-name h4 {
+  font-size: 10px;
+  margin: 0 0 3px 0;
+  color: rgba(255, 255, 255, 0.288);
+}
+.control-name h5 {
+  font-size: 10px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.795);
+}
+.control-button i {
+  color: white;
+}
+.control-button {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+  font-size: 11px;
+}
+/*player2 -----------------------------------------------------*/
+
+.header2 {
+  margin-bottom: 40px;
+}
+.art2 {
+  margin-bottom: 25px;
+}
+.art2 img {
+  width: 170px;
+  height: 170px;
+  margin-bottom: 7px;
+}
+.art2 h3 {
+  font-size: 14px;
+}
+.art2 h4 {
+  font-size: 13px;
+}
+.slider {
+  margin-bottom: 37px;
+  width: 100%;
+}
+.slider-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.562);
+  font-size: 12px;
+}
+.slider-bar {
+  display: flex;
+  align-items: center;
+}
+.slider-bar-left {
+  background-color: black;
+  width: 70%;
+  height: 3px;
+  margin: 0;
+}
+.slider-bar-right {
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.274);
+  width: 30%;
+  margin: 0;
+}
+@keyframes heartBeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.2);
+  }
+  100% {
+    transform: none;
+  }
+}
+.pointer {
+  height: 8px;
+  width: 8px;
+  background: black;
+  border-radius: 50%;
+  margin-left: -1px;
+  animation: heartBeat 1s ease-in-out infinite;
+}
+.control2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100px;
+  box-sizing: border-box;
+}
+
+.play-button {
+  background-color: rgb(0, 0, 0);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+}
+.fa-play::before {
+  position: relative;
+  left: 1px;
+}
+.control2 i {
+  margin: 0 13px;
+}
+.btn1,
+.btn5 {
+  opacity: 0.3;
+}
+@keyframes heartBeat2 {
+  0% {
+    transform: none;
+  }
+  50% {
+    
+    transform: scale(1.1);
+  }
+  100% {
+    transform: none;
+  }
+}
+button{
+  animation: heartBeat2 1s ease-in-out infinite;
+  position: absolute;
+  top:40px;
+  left:230px;
+}
+
+  </style>
+  <title>CSS Portfolio Index</title>
+</head>
+
+    <!-------------------------Player 2------------------------------------------------->
+<body class="player2-body">
+  <a href="index.html">
+    <button>Back to Index</button></a>
+     
+    <main class="player1 player2">
+      <div class="header header2">
+        <i class="fas fa-arrow-left"></i>
+        <i class="fas fa-ellipsis-v"></i>
+       </div>
+  
+      <div class="art art2">
+        <img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/283a7dab-e687-489a-addf-f9bad4ba3891/lemonjelly-losthorizons-sml.jpg" alt="jelly">
+        <h3>Lost Horizons</h3>
+        <h4>Lemon Jelly</h4>
+      </div>
+    
+      <div class="slider">
+        <div class="slider-time">
+        <span>2:34</span>
+        <span>3:40</span>
+        </div>
+
+        <div class="slider-bar">
+          <div class="slider-bar-left"></div>
+          <div class="pointer"></div>
+          <div class="slider-bar-right"></div>
+        </div>
+      </div>
+  
+         <div class="control2">
+          <i class="btn1 fas fa-sync-alt"></i>
+          <i class="fas fa-step-backward"></i>
+          <div class="play-button"><i class="fas fa-play"></i></div>
+          <i class="fas fa-step-forward"></i>
+          <i class="btn5 fas fa-random"></i>
+        </div>
+ 
+  </main>
+
+
+<script src="https://kit.fontawesome.com/8b5a5cb437.js" crossorigin="anonymous"></script>
+</body>
+</html>

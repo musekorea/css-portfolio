@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:100vh;
+      background-color: rgba(200, 255, 0, 0.178);;
+    }
+.player1 {
+  width: 200px;
+  height: 430px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0985e393;
+  }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.art img {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  margin-bottom: 7px;
+}
+.art h3 {
+  font-size: 12px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+.art h4 {
+  margin: 0;
+  opacity: 0.4;
+  font-size: 10px;
+}
+.like {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.like1 {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.753);
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 60px;
+  margin-right: 20px;
+}
+.like2 {
+  background-color: white;
+  color: gray;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 60px;
+}
+.like2 i {
+  color: black;
+  margin-right: 5px;
+  animation: heartBeat 1s infinite;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px;
+}
+.list-li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.list-ul {
+  padding: 0px;
+}
+.list img {
+  width: 35px;
+  height: 35px;
+  border-radius: 7px;
+  margin-right: 10px;
+}
+.list h4 {
+  font-size: 11px;
+  margin: 0 0 3px 0;
+}
+.list h5 {
+  font-size: 10px;
+  margin: 0;
+  opacity: 0.5;
+}
+.list-li-left {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+.fa-ellipsis-v {
+  opacity: 0.3;
+  font-size: 13px;
+}
+.control {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #1b1d1d;
+  border-radius: 30px;
+  padding: 3px;
+}
+.control-name h4 {
+  font-size: 10px;
+  margin: 0 0 3px 0;
+  color: rgba(255, 255, 255, 0.288);
+}
+.control-name h5 {
+  font-size: 10px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.795);
+}
+.control-button i {
+  color: white;
+}
+.control-button {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+  font-size: 11px;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.2);
+  }
+  100% {
+    transform: none;
+  }
+}
+  @keyframes heartBeat2 {
+  0% {
+    transform: none;
+  }
+  50% {
+    
+    transform: scale(1.1);
+  }
+  100% {
+    transform: none;
+  }
+}
+button{
+  animation: heartBeat2 1s ease-in-out infinite;
+  position: absolute;
+  top:40px;
+  left:230px;
+
+}
+
+  </style>
+  <title>Music Player Coding</title>
+</head>
+
+<body>
+  <a href="index.html">
+    <button>Back to Index</button></a>
+  <main class="player1">
+    <div class="header">
+      <i class="fas fa-arrow-left"></i>
+      <i class="fas fa-search"></i>
+     </div>
+
+    <div class="art">
+      <img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/48774aeb-ab01-4996-aaa6-2ad50ca1910a/34.jpg" alt="hot chip">
+      <h3>Hop Chip - The Warning</h3>
+      <h4>R&B/Soul</h4>
+    </div>
+
+    <div class="like">
+      <div class="like1"><span>Shuffle</span></div>
+      <div class="like2">
+      <i class="fas fa-heart"></i>
+        <span>212,971</span>
+      </div>
+    </div>
+
+    <div class="list">
+        <l1 class="list-li">
+        <div class="list-li-left">
+          <img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/9c1d01ee-43b2-4a45-b380-3be4d9e3b818/55.jpg" alt="Fort-Minor">
+          <div class="list-inbox">
+            <h4>The Rising Tied Front</h4>
+            <h5>Fort-Minor</h5>
+          </div>
+        </div>
+          <i class="fas fa-ellipsis-v"></i>
+        </l1>
+
+        <l1 class="list-li">
+          <div class="list-li-left">
+            <img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7bf345da-6774-48c4-89ad-98d7362cc97e/17.jpg" alt="XTC">
+            <div class="list-inbox">
+              <h4>Drums and Wires</h4>
+              <h5>XTC</h5>
+            </div>
+          </div>
+            <i class="fas fa-ellipsis-v"></i>
+          </l1>
+
+          <l1 class="list-li">
+            <div class="list-li-left">
+              <img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c348b23b-ab05-492b-9fc7-07144eb27edf/16.jpg" alt="Radiohead">
+              <div class="list-inbox">
+                <h4>Hail to the Thief</h4>
+                <h5>Radiohead</h5>
+              </div>
+            </div>
+              <i class="fas fa-ellipsis-v"></i>
+            </l1>
+  
+            <l1 class="list-li">
+              <div class="list-li-left">
+                <img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/9ade3f1d-6b38-496b-a788-61dd2675fe05/37.jpg" alt="Rolling Stones">
+                <div class="list-inbox">
+                  <h4>Forty Licks</h4>
+                  <h5>Rolling Stones</h5>
+                </div>
+              </div>
+                <i class="fas fa-ellipsis-v"></i>
+              </l1>
+    </div>
+
+    <div class="control">
+      <div class="control-name">
+        <h4>Blinding Lights</h4>
+        <h5>The Weeknd</h5>
+      </div>
+      <div class="control-button">
+        <i class="fas fa-step-backward"></i>
+        <i class="fas fa-pause"></i>
+        <i class="fas fa-step-forward"></i>
+
+      </div>
+    </div>
+  </main>
+
+ 
+
+
+<script src="https://kit.fontawesome.com/8b5a5cb437.js" crossorigin="anonymous"></script>
+</body>
+</html>

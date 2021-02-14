@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Animation</title>
+    <style>
+  body {
+  font-family: sans-serif;
+  background-color: #76c4c6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 150px;
+}
+.anih1 {
+  position: relative;
+  top: -90px;
+}
+
+@keyframes dotAnimation {
+  50% {
+    transform: rotate(0.5turn);
+  }
+  100% {
+    transform: rotate(0.5turn);
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dots {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  animation: dotAnimation 1s ease-in-out infinite;
+  margin-bottom: 150px;
+}
+
+.dot {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  /* 👆🏻 If you set the border-radius to half of the width and height 
+  it becomes a circle, 50% also works*/
+}
+
+.lines {
+  width: 150px;
+}
+
+@keyframes lineAnim {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scaleY(2);
+  }
+  50%,
+  100% {
+    transform: none;
+  }
+}
+
+.line {
+  width: 20px;
+  height: 80px;
+  background-color: white;
+  animation: lineAnim 1s ease-in-out infinite;
+}
+
+/*
+Remove 'animation-delay and see what happens!!!
+*/
+
+.line:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.line:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.line:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.line:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+@keyframes heartBeat {
+  0% {
+    
+    transform: none;
+  }
+  50% {
+    
+    transform: scale(1.1);
+  }
+  100% {
+    
+    transform: none;
+  }
+}
+button{
+  animation: heartBeat 1s ease-in-out infinite;
+  position: relative;
+  top:-70px;
+}
+
+    </style>
+  </head>
+  <body class="anibody">
+    <a href="index.html">
+      <button>Back to Index</button></a>
+      <div class="first">
+    <h1 class="anih1">CSS Animation</h1>
+    
+    <div class="dots box">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <div class="lines box">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </body>
+</html>
